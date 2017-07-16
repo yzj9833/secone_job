@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS `spell` (
+id int primary key auto_increment,
+`sname` varchar(20) NOT NULL,
+`pic` varchar(20) NOT NULL,
+`bpic` varchar(20) NOT NULL,
+`slevel` varchar(20) NOT NULL,
+`sdesc` varchar(100) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8;
+
+INSERT INTO `spell` (`id`, `sname`, `pic`, `bpic`,`slevel`,`sdesc`) VALUES
+(null, '惩击', '1.jpg','1-big.jpg','LV.1解锁','30秒CD：对身边的野怪和小兵造成真实伤害并眩晕1秒'),
+(null, '斩杀', '2.jpg','2-big.jpg','LV.3解锁','90秒CD：立即对身边敌军英雄造成其已损失生命值14%的真实伤害'),
+(null, '狂暴', '3.jpg','3-big.jpg','LV.5解锁','60秒CD：增加攻击速度60%，并增加物理攻击力10%持续5秒'),
+(null, '疾跑', '4.jpg','4-big.jpg','LV.7解锁','100秒CD：增加30%移动速度持续10秒'),
+(null, '治疗术', '5.jpg','5-big.jpg','LV.9解锁','120秒CD：回复自己与附近队友15%生命值，提高附近友军移动速度15%持续2秒'),
+(null, '干扰', '6.jpg','6-big.jpg','LV.11解锁','60秒CD：沉默机关持续5秒'),
+(null, '眩晕', '7.jpg','7-big.jpg','LV.13解锁','90秒CD：晕眩身边所有敌人0.75秒，并附带持续1秒的减速效果'),
+(null, '净化', '8.jpg','8-big.jpg','LV.15解锁','120秒CD：解除自身所有负面和控制效果并免疫控制持续1.5秒'),
+(null, '弱化', '9.jpg','9-big.jpg','LV.17解锁','90秒CD：减少身边敌人伤害输出30%持续2.5秒'),
+(null, '闪现', '10.jpg','10-big.jpg','LV.19解锁','120秒CD：向指定方向位移一段距离');

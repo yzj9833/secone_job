@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <title>局内道具</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/hero.css"/>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <style>
+        .poppup-item{display:none;position:absolute;top:20%;left:20%;background:rgba(0,0,0,.9);opacity:0.9;border:1px solid #459ef4;width:213px;padding:24px 15px 24px 33px;z-index:100;font-family:"microsoft yahei";}
+        .item-title{height:74px}
+        .item-title img{float:left;width:74px;height:74px;margin-right:15px}
+        .item-title .cons{float:left;margin-left:6px;}
+        .item-title h4{font-size:18px;font-weight:bold;color:#23ff28;line-height:26px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+        .item-title .cons p{font-size:14px;color:#da951c;line-height:30px}
+        .item-desc{padding:12px 0;color:#369ff9;font-size:14px;line-height:22px}
+        .clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; } .clearfix {zoom:1;}
+        .item-desc div{line-height:22px;word-wrap : break-word ;word-break:break-all;margin-bottom:10px;}
+      /**/
+
+    </style>
+</head>
+<body>
+<!--页头-->
+<div class="wrapper"></div>
+<!-- 内容区域1 S -->
+<div class="zkcontent">
+    <div class="zk-con-box">
+        <!-- 位置信息 S -->
+        <div class="zk-con1 zk-con">
+            <div class="con1-pos">
+                <i class="tb1 icon fl"></i>
+                <a href="http://pvp.qq.com/" target="_blank" title="王者荣耀首页">王者荣耀首页</a>
+                <span>&gt;</span>
+                <label>局内道具</label>
+            </div>
+            <h3 class="herolist-title">局内道具</h3>
+            <ul class="herolist-nav">
+                <li><a href="herolist.html" target="_blank">英雄</a></li>
+                <li class="current"><a href="item.html" target="_blank">局内道具</a></li>
+                <li><a href="summoner.html" target="_blank">召唤师技能</a></li>
+            </ul>
+        </div>
+        <!-- 位置信息 E -->
+        <!-- 物品 S -->
+        <div class="herolist-box">
+            <div class="clearfix herolist-types item-types">
+                <ul class="clearfix types-ms">
+                    <!-- 物品分类-->
+                    <!--<li class="current"  data-type="0">-->
+                    <!--<span class="ms-radio"><i class="i"></i></span>-->
+                    <!--<label>全部</label>-->
+                    <!--</li>-->
+                </ul>
+                <div class="herosearch itemsearch">
+                    <input type="text" id="search" name="search" class="herosearch-input"
+                           placeholder="请输入你想要搜索的道具名">
+                    <a href="javascript:void(0);" class="herosearch-icon" id="searchBtn"></a>
+                </div>
+            </div>
+
+            <div class="herolist-content">
+                <ul class="clearfix herolist" id="Jlist-details">
+                        <!--物品信息-->
+                </ul>
+            </div>
+        </div>
+        <!-- 物品 E -->
+    </div>
+</div>
+<!--页尾-->
+<div class="footer-wrap"></div>
+<!--装备属性遮罩层-->
+<div id="popPupItem" class="poppup-item" style="display: none;">
+    <div id="itemFromTop">
+        <div class="item-title clearfix">
+            <img src="" alt="" id="Jpic">
+            <div class="cons">
+                <h4 id="Jname"></h4>
+                <p id="Jprice">售价：1182</p>
+                <p id="Jtprice">总价：1980</p>
+            </div>
+        </div>
+        <div class="item-desc">
+            <div id="Jitem-desc1"></div>
+            <div id="Jitem-desc2"></div>
+        </div>
+    </div>
+</div>
+<script src="js/header.js"></script>
+<script src="js/item.js"></script>
+</body>
+</html>

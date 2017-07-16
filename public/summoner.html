@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>王者荣耀召唤师技能</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/hero.css"/>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <style>
+        /*召唤师技能*/
+        .imgtextlist{float:left;width:940px;padding:30px 0 0;margin-left:-14px;margin-right:-20px;position:relative}
+        .imgtextlist li{float:left;width:116px;height:120px;margin-bottom:22px;text-align:center;line-height:15px;cursor:pointer;position:relative;overflow:hidden}
+        .imgtextlist img{display:block;margin:0 auto 7px; width: 85px; height: 85px; border-radius: 10px 0 10px 0;border: 3px solid #1E84E7}
+        .imgtextlist .current{color:#00A383}
+        .imgtextlist .current img{ border:3px solid #00A383; }
+        .imgtextlist a{color:#666}
+        .imgtextlist a:hover{color:#00A383;text-decoration:none}
+
+        .spell-list{float:left;width:43%;padding-left:16px;margin-right:0;border-right:1px solid #F0F0F0}
+        .spell-defail{float:left;width:50%;padding-top:30px;padding-left:40px}
+        .spell-title{overflow:hidden;zoom:1}
+        .spell-title img{float:left;margin-right:20px}
+        .spell-title h4{float:left;width:60%;font-size:16px;color:#00A383;line-height:30px}
+        .spell-title .cons{float:left;width:60%;color:#9A9A9A;line-height:30px;font-size:14px}
+        .spell-desc{padding:20px 0;line-height:18px;color:#333;font-size:14px}
+    </style>
+</head>
+<body>
+<!--页头-->
+<div class="wrapper"></div>
+
+<!-- 内容区域1 S -->
+<div class="zkcontent">
+    <div class="zk-con-box">
+        <!-- 位置信息 S -->
+        <div class="zk-con1 zk-con">
+            <div class="con1-pos">
+                <i class="tb1 icon fl"></i>
+                <a href="http://pvp.qq.com/" target="_blank" title="王者荣耀首页">王者荣耀首页</a>
+                <span>></span>
+                <label>召唤师技能</label>
+            </div>
+            <h3 class="herolist-title">召唤师技能</h3>
+            <ul class="herolist-nav">
+                <li><a href="herolist.html" target="_blank">英雄</a></li>
+                <li><a href="item.html" target="_blank">局内道具</a></li>
+                <li class="current"><a href="summoner.html" target="_blank">召唤师技能</a></li>
+            </ul>
+        </div>
+        <!-- 位置信息 E -->
+        <!-- 召唤师技能 S -->
+        <div class="herolist-box">
+            <div class="clearfix herolist-types item-types">
+                <ul id="spellList" class="imgtextlist spell-list">
+                    <!--<li id="80104" class="">-->
+                        <!--<img src="http://game.gtimg.cn/images/yxzj/img201606/summoner/80104.jpg" alt="惩击">-->
+                        <!--<p>惩击</p>-->
+                    <!--</li>-->
+                </ul>
+                <div id="spellDefail" class="spell-defail">
+                    <div class="spell-title">
+                        <img src="img/spell-img/1-big.jpg" alt="惩击">
+                        <h4>惩击</h4>
+                        <p class="cons">LV.1解锁</p>
+                    </div>
+                    <div class="spell-desc">
+                        30秒CD：对身边的野怪和小兵造成真实伤害并眩晕1秒
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 召唤师技能 E -->
+    </div>
+</div>
+
+<!--页尾-->
+<div class="footer-wrap"></div>
+<script src="js/header.js"></script>
+<script>
+    $.ajax({
+        type:"GET",
+        url:"/summoner",
+        success:function(data){
+            var html="";
+            for(var i=0;i<data.length;i++){
+                html+=`<li data-id=${i}>
+                        <img src="img/spell-img/${data[i].pic}" alt="${data[i].pic}" title="${data[i].sname}">
+                        <p>${data[i].sname}</p>
+                    </li>`;
+            }
+            $("#spellList").html(html);
+            $("#spellList li:first").addClass("current");
+            $("#spellList li").on("click",function(){
+                $(this).addClass("current").siblings().removeClass("current");
+                var t=$(this).data("id");
+                var html=`<div class="spell-title">
+                        <img src="img/spell-img/${data[t].bpic}" alt="${data[t].bpic}" title="${data[t].sname}">
+                        <h4>${data[t].sname}</h4>
+                        <p class="cons">${data[t].slevel}</p>
+                    </div>
+                    <div class="spell-desc">
+                        ${data[t].sdesc}
+                    </div>`;
+                $("#spellDefail").html(html);
+            })
+        }
+    })
+</script>
+</body>
+</html>

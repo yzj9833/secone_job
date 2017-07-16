@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <title>王者荣耀英雄资料</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/hero.css"/>
+    <script src="js/jquery-1.9.1.min.js"></script>
+
+</head>
+<body>
+<!--页头-->
+<div class="wrapper"></div>
+<!-- 内容区域1 S -->
+<div class="zkcontent">
+    <div class="zk-con-box">
+        <!-- 位置信息 S -->
+        <div class="zk-con1 zk-con">
+            <div class="con1-pos">
+                <i class="tb1 icon fl"></i>
+                <a href="http://pvp.qq.com" target="_blank" title="王者荣耀首页">王者荣耀首页</a>
+                <span>></span>
+                <label>英雄介绍</label>
+            </div>
+            <h3 class="herolist-title">英雄介绍</h3>
+            <ul class="herolist-nav">
+                <li class="current"><a href="herolist.html" target="_blank">英雄</a></li>
+                <li><a href="item.html" target="_blank">局内道具</a></li>
+                <li><a href="summoner.html" target="_blank">召唤师技能</a></li>
+            </ul>
+        </div>
+        <!-- 位置信息 E -->
+        <!-- 英雄介绍 S -->
+        <div class="herolist-box">
+            <div class="clearfix herolist-types">
+                <ul class="types-left">
+                    <li>综合</li>
+                    <li>定位</li>
+                </ul>
+                <ul class="clearfix types-ms">
+                    <li data-ptype="10">
+                        <span class="ms-radio"><i class="i"></i></span>
+                        <label>本周免费</label>
+                    </li>
+                    <li data-ptype="11">
+                        <span class="ms-radio"><i class="i"></i></span>
+                        <label>新手推荐</label>
+                    </li>
+                </ul>
+                <ul class="clearfix types-ms">
+                    <li class="current" data-type="0">
+                        <span class="ms-radio"><i class="i"></i></span>
+                        <label>全部</label>
+                    </li>
+                    <li data-type="1">
+                        <span class="ms-radio"><i class="i"></i></span>
+                        <label>坦克</label>
+                    </li>
+                    <li data-type="2">
+                        <span class="ms-radio"><i class="i"></i></span>
+                        <label>战士</label>
+                    </li>
+                    <li data-type="3">
+                        <span class="ms-radio"><i class="i"></i></span>
+                        <label>刺客</label>
+                    </li>
+                    <li data-type="4">
+                        <span class="ms-radio"><i class="i"></i></span>
+                        <label>法师</label>
+                    </li>
+                    <li data-type="5">
+                        <span class="ms-radio"><i class="i"></i></span>
+                        <label>射手</label>
+                    </li>
+                    <li data-type="6">
+                        <span class="ms-radio"><i class="i"></i></span>
+                        <label>辅助</label>
+                    </li>
+                </ul>
+                <div class="herosearch">
+                    <input type="text" id="search" name="search" class="heroSearch herosearch-input" placeholder="请输入你想要搜索的英雄名">
+                    <a href="javascript:void(0);" class="herosearch-icon" title="点击搜索" id="searchBtn"></a>
+                </div>
+            </div>
+            <div class="herolist-content">
+                <p id="JErroTips" style="display:none;">输入英雄不存在，请重新输入</p>
+                <ul class="herolist clearfix" id="hero-list">
+                    <!--<li><a href="#"><img src="http://game.gtimg.cn/images/yxzj/web201605/page/vl_searheroIcon.png" alt="">李元芳</a></li>
+                    <li><a href="#"><img src="http://game.gtimg.cn/images/yxzj/web201605/page/vl_searheroIcon.png" alt="">李元芳</a></li>-->
+                </ul>
+            </div>
+        </div>
+        <!-- 英雄介绍 E -->
+    </div>
+</div>
+<!--页尾-->
+<div class="footer-wrap"></div>
+<script src="js/header.js"></script>
+
+</body>
+</html>

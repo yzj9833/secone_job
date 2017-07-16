@@ -1,0 +1,496 @@
+/*公用的css*/
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form{
+	margin:0px;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%
+}
+em,i,b {
+	font-style: normal
+}
+ul,ol {
+	list-style-type: none;
+}
+a,a:hover{
+	text-decoration: none;
+	color: #363636
+}
+img {
+	border-width: 0px;
+	border-radius: 5px
+}
+button,input,select,textarea{
+	font-size: 100%;
+	outline-style: none
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td,th,ul,ol{
+	padding: 0px;
+}
+.pr{
+	position: relative;
+}
+.pa {
+	position: absolute;
+}
+.fl {
+	float: left;
+	display:inline;
+}
+.fr {
+	float: right;
+	display:inline;
+}
+.bc {
+	margin-left: auto; margin-right: auto
+}
+.cb {
+	clear: both;
+}
+.clearfix:after {
+	height: 0px; CONTENT: ' '; CLEAR: both; DISPLAY: block; LINE-HEIGHT: 0; VISIBILITY: hidden
+}
+.none {
+	DISPLAY: none
+}
+.db {
+	display: block
+}
+.ht {
+	overflow: hidden;
+	text-decoration: none;
+	text-indent: -9999px
+}
+.fb {
+	FONT-WEIGHT: bold
+}
+.fn {
+	FONT-WEIGHT: normal
+}
+.f12 {
+	FONT-SIZE: 12px
+}
+.f16 {
+	FONT-SIZE: 16px
+}
+.f22 {
+	FONT-SIZE: 22px
+}
+.tc {
+	TEXT-ALIGN: center
+}
+.tr {
+	TEXT-ALIGN: right
+}
+.video-list .mr0 {
+	MARGIN-RIGHT: 0px
+}
+.zkcontent {
+	HEIGHT: auto; WIDTH: 100%; BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/page/ny_con_bg.jpg) no-repeat center top; MIN-WIDTH: 1200px; MARGIN: 0px auto; MIN-HEIGHT: 620px
+}
+.chromeframe {
+	FONT-SIZE: 14px; WIDTH: 100%; BACKGROUND: #000; COLOR: #fff; PADDING-BOTTOM: 10px; TEXT-ALIGN: center; PADDING-TOP: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.chromeframe A {
+	COLOR: #f13c35
+}
+body {
+	BACKGROUND: #fafafa;
+	COLOR: #323235;
+	PADDING-TOP: 42px;
+	FONT: 14px/1.5 '微软雅黑',tahoma,'宋体',sans-serif
+}
+.wrapper {
+	background: url("../img/bg_wrapper2.jpg") no-repeat center top;
+	position: relative;
+	z-index: 9999;
+}
+.top-nav-bg {
+	height: 84px;
+	width: 100%;
+	background: #000;
+	min-width: 1200px;
+	position: absolute;
+	left: 0px;
+	z-index: 99;
+	top: 0px;
+}
+.idx-mask {
+	HEIGHT: 286px; WIDTH: 100%; BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/top_banner/idx-mask.png) 50% 0px; MIN-WIDTH: 1200px; POSITION: absolute; LEFT: 0px; Z-INDEX: 20; TOP: 0px
+}
+.logo {
+	height: 152px;
+	width: 204px;
+	background: url(../img/logo.png) no-repeat center center;
+	Z-INDEX: 100
+}
+.spr {
+	BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/main/spr.png) no-repeat
+}
+.spr2 {
+	BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/main/spr2.jpg) no-repeat
+}
+.header {
+	overflow: hidden;
+	height:588px;
+	width: 100%;
+	position: relative;
+	z-index: 99
+}
+.header-inner {
+	HEIGHT: 72px; MARGIN: 0px auto
+}
+.sub-nav {
+	width: 100%;
+	background: #000;
+	position: absolute;
+	padding-bottom: 30px;
+	padding-top: 15px;
+	left: 0px;
+	z-index: 3;
+	top: 84px;
+	visibility:hidden;
+}
+.sub-nav-inner {
+	overflow: hidden;
+	height: 176px;
+	width: 982px;
+	padding-left: 218px;
+	margin: 0px auto
+}
+.logo {
+	HEIGHT: 152px; WIDTH: 218px; LEFT: 0px; TOP: -473px
+}
+.view-btn {
+	height: 100px;
+	width: 250px;
+	position: absolute;
+	outline-style: none;
+	left: -20px;
+	z-index: 999;
+	top: -130px
+}
+.main-nav {
+	width: 982px;
+	padding-left: 218px;
+	margin: 0px auto
+}
+.main-nav LI {
+	HEIGHT: 84px; WIDTH: 100px; FLOAT: left; PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 5px; MARGIN-LEFT: 12px; DISPLAY: inline; PADDING-RIGHT: 5px
+}
+.main-nav A {
+	FONT-SIZE: 16px; HEIGHT: 52px; WIDTH: 100px; COLOR: #e2e2e2; PADDING-BOTTOM: 0px; PADDING-TOP: 20px; PADDING-LEFT: 0px; DISPLAY: block; PADDING-RIGHT: 0px
+}
+.main-nav I {
+	FONT-SIZE: 16px; DISPLAY: block
+}
+.main-nav EM {
+	COLOR: #858792; PADDING-TOP: 5px; DISPLAY: block; -webkit-transform: scale(0.75); -o-transform: scale(1)
+}
+.down-nav {
+	WIDTH: 100px; FLOAT: left; PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 2px; PADDING-LEFT: 5px; MARGIN-LEFT: 12px; DISPLAY: inline; PADDING-RIGHT: 5px
+}
+.down-nav A {
+	FONT-SIZE: 14px; HEIGHT: 30px; COLOR: #e2e2e2; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; DISPLAY: block; LINE-HEIGHT: 30px; PADDING-RIGHT: 0px
+}
+.down-nav A:hover {
+	TEXT-DECORATION: underline; COLOR: #28a0e7
+}
+.info-box {
+	height:115px;
+	width:1200px;
+	background: url(../img/bg_header.png) no-repeat;
+	position: relative;
+	margin: 401px auto 0px
+}
+.hero-box {
+	width: 732px;
+	color: #a6afbc;
+	padding-bottom:0px;
+	padding-top: 8px;
+	padding-left: 20px;
+	padding-right: 20px
+}
+.hero-list {
+	MARGIN-TOP: 8px
+}
+.hero-list li {
+	position: relative;
+	float: left;
+	display: inline;
+	margin-right: 10px
+}
+.hero-list a {
+	display: block
+}
+.hero-list img {
+	border-radius: 5px
+}
+.more-hero {
+	right: 15px;
+	color: #626a7a;
+	padding-bottom: 10px;
+	padding-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 15px;
+	TOP: 10px;
+}
+.txt1 {
+	COLOR: #6595c2
+}
+.more-hero:hover {
+	COLOR: #6595c2
+}
+.login-box {
+	width: 408px;
+	padding-bottom: 12px;
+	padding-top: 12px;
+	padding-left: 10px;
+	padding-right: 10px
+}
+#unlogin {
+	MARGIN-TOP: 32px
+}
+.avatar {
+	hight: 120px;
+	width: 106px; background-position: -110px -174px;
+	left: 10px;
+	display: block;
+	top: -5px
+}
+.avatar img {
+	MARGIN: 24px 0px 0px 15px; border-radius: 10px
+}
+.level-ico {
+	height: 20px;
+	width: 21px;
+	background-position: -331px -105px;
+	color: #ffffff;
+	padding-left: 3px;
+	left: 68px;
+	top: 81px
+}
+.per-infor {
+	WIDTH: 300px; MARGIN-LEFT: 115px
+}
+.user-name {
+	MARGIN-BOTTOM: 20px
+}
+.user-name EM {
+	FONT-SIZE: 16px; COLOR: #ffffff
+}
+.user-name I {
+	COLOR: #8ea0b0; MARGIN-LEFT: 10px
+}
+.user-name A {
+	COLOR: #8ea0b0; MARGIN-LEFT: 10px
+}
+.userinfo-list LI {
+	OVERFLOW: hidden; BORDER-TOP: #0c3253 1px solid; HEIGHT: 46px; BORDER-RIGHT: #0c3253 1px solid; WIDTH: 68px; BACKGROUND: #0b3b61; BORDER-BOTTOM: #0c3253 1px solid; FLOAT: left; BORDER-LEFT: #0c3253 1px solid; DISPLAY: inline; MARGIN-RIGHT: 2px; border-radius: 5px
+}
+.userinfo-list EM {
+	OVERFLOW: hidden; HEIGHT: 20px; COLOR: #b3bbc5; MARGIN-TOP: 3px; DISPLAY: block
+}
+.userinfo-list I {
+	FONT-SIZE: 12px; COLOR: #406380
+}
+.txt2 {
+	COLOR: #b3bbc5
+}
+.txt2 A {
+	COLOR: #2d84d3
+}
+.footer-wrap {
+	HEIGHT: 362px; BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/top_banner/bg_footer.jpg) no-repeat center 0px
+}
+.footer {
+	WIDTH: 1200px; PADDING-TOP: 80px
+}
+.foot-t {
+	MARGIN-BOTTOM: 20px; BORDER-BOTTOM: #d4d4d4 2px solid; PADDING-BOTTOM: 10px
+}
+.foot-logo {
+	WIDTH: 377px
+}
+.logo1 {
+	HEIGHT: 64px; WIDTH: 285px
+}
+.logo2 {
+	HEIGHT: 64px; WIDTH: 70px; BACKGROUND-POSITION: -285px 0px
+}
+.foot-tips {
+	WIDTH: 338px
+}
+.foot-tips EM {
+	COLOR: #6d6d6d; MARGIN-RIGHT: 12px
+}
+.foot-media {
+	CURSOR: pointer; WIDTH: 285px; BACKGROUND: #f7f7f7; COLOR: #666666; MARGIN-TOP: 20px
+}
+.media-tit {
+	BORDER-TOP: #b8b8b8 3px solid; HEIGHT: 30px; BORDER-RIGHT: #b8b8b8 3px solid; WIDTH: 270px; BORDER-BOTTOM: #b8b8b8 3px solid; PADDING-LEFT: 10px; BORDER-LEFT: #b8b8b8 3px solid; LINE-HEIGHT: 30px
+}
+.arrow-ico-btn {
+	HEIGHT: 24px; WIDTH: 38px; RIGHT: 3px; BORDER-LEFT: #b8b8b8 1px solid; TOP: 6px
+}
+.arrow-ico {
+	HEIGHT: 6px; WIDTH: 7px; BACKGROUND-POSITION: -348px -86px; MARGIN: 10px 0px 0px 15px
+}
+.media-list {
+	BORDER-TOP: #b8b8b8 3px solid; HEIGHT: 300px; BORDER-RIGHT: #b8b8b8 3px solid; WIDTH: 280px; OVERFLOW-Y: auto; BORDER-BOTTOM: #b8b8b8 3px solid; BORDER-LEFT: #b8b8b8 3px solid; MARGIN-TOP: -3px; BACKGROUND-COLOR: #f7f7f7
+}
+.media-list A {
+	HEIGHT: 28px; BACKGROUND: #f7f7f7; PADDING-LEFT: 15px; DISPLAY: block; LINE-HEIGHT: 28px
+}
+.media-list A:hover {
+	TEXT-DECORATION: none; BACKGROUND: #3589dd; COLOR: #ffffff
+}
+.foot-b {
+	COLOR: #646467
+}
+.foot-b A {
+	COLOR: #646467
+}
+.foot-b {
+	WIDTH: 588px; FLOAT: right
+}
+.foot-txt {
+	WIDTH: 586px; MARGIN: 5px 0px
+}
+.foot-t .media-pic {
+	MARGIN-LEFT: 36px; MARGIN-TOP: 17px
+}
+.foot-b .cb {
+	MARGIN-BOTTOM: 5px; TEXT-ALIGN: left
+}
+.footer-wrap2 {
+	HEIGHT: 502px; BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/page/footer_bg.jpg) #3d4253 no-repeat center 0px; COLOR: #82879b
+}
+.footer-wrap2 .foot-t {
+	BORDER-BOTTOM: #82879b 2px solid
+}
+.footer-wrap2 .logo1 {
+	BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/page/footer_logo.png) no-repeat
+}
+.footer-wrap2 .logo2 {
+	BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/page/footer_logo.png) no-repeat -285px 0px
+}
+.pop {
+	HEIGHT: 254px; WIDTH: 530px; BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/main/login.jpg) no-repeat
+}
+.close {
+	HEIGHT: 40px; WIDTH: 40px; BACKGROUND: url(about:blank); RIGHT: 0px; TOP: 0px
+}
+.wx-login {
+	height: 46px;
+	width: 197px;
+	left: 60px;
+	top: 143px
+}
+.qq-login {
+	height: 46px;
+	width: 197px;
+	left: 272px;
+	top: 143px
+}
+.pop2 {
+	height: 354px; width: 530px;
+	background: url(http://game.gtimg.cn/images/yxzj/web201605/main/sec.jpg) no-repeat
+}
+.se-input {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 117px; PADDING-LEFT: 50px; PADDING-RIGHT: 0px
+}
+.se-input SELECT {
+	MARGIN-BOTTOM: 10px; HEIGHT: 37px; WIDTH: 430px; DISPLAY: block; LINE-HEIGHT: 37px
+}
+.se-btn {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 16px; PADDING-LEFT: 146px; PADDING-RIGHT: 0px
+}
+.se-btn A {
+	HEIGHT: 34px; WIDTH: 116px; BACKGROUND: url(about:blank); MARGIN-RIGHT: 13px
+}
+.icon {
+	BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/page/sprite.png) no-repeat; DISPLAY: block; TEXT-INDENT: -9999px
+}
+.con1-pos {
+	MARGIN-BOTTOM: 40px; FONT-SIZE: 16px; HEIGHT: 20px; WIDTH: 100%; COLOR: #464547; LINE-HEIGHT: 20px
+}
+.con1-pos .tb1 {
+	HEIGHT: 18px; WIDTH: 18px; BACKGROUND-POSITION: 0px -4px; MARGIN-RIGHT: 9px
+}
+.con1-pos A {
+	MARGIN-RIGHT: 8px
+}
+.con1-pos SPAN {
+	MARGIN-RIGHT: 8px
+}
+.con1-pos A {
+	TEXT-DECORATION: underline
+}
+.dia-weixin {
+	HEIGHT: 297px; WIDTH: 306px; BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/page/weixin.png)
+}
+.dia-story {
+	HEIGHT: 297px; WIDTH: 306px; BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/page/story.png)
+}
+.dia-skin {
+	HEIGHT: 297px; WIDTH: 306px; BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/page/skin.png)
+}
+.dia-version {
+	HEIGHT: 297px; WIDTH: 306px; BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/page/version.png)
+}
+.dia-kefu {
+	OVERFLOW: hidden; HEIGHT: 358px; WIDTH: 368px; BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/page/kf.png)
+}
+.dia-kefu P {
+	FONT-SIZE: 18px; COLOR: #b7bde1; MARGIN: 266px 0px 0px 76px; TEXT-INDENT: 17px
+}
+.dia-kefu A {
+	COLOR: #7b96e4
+}
+.dia-close {
+	HEIGHT: 45px; WIDTH: 45px; BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/page/close.png); RIGHT: 0px; POSITION: absolute; TOP: 0px
+}
+.download-popup .dia-con {
+	WIDTH: auto; BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.dia-download {
+	BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/page/down_bg.png); PADDING-BOTTOM: 23px; PADDING-TOP: 30px; PADDING-LEFT: 48px; PADDING-RIGHT: 76px
+}
+.dia-download .code {
+	FLOAT: left; MARGIN-RIGHT: 36px
+}
+.dia-download .btnlist {
+	FLOAT: left
+}
+.dia-download .btnlist A {
+	MARGIN-BOTTOM: 9px; HEIGHT: 46px; WIDTH: 212px; BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/page/down.png); DISPLAY: block
+}
+.download-popup .dia-close {
+	MARGIN-BOTTOM: 9px; HEIGHT: 46px; WIDTH: 212px; BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/page/down.png); DISPLAY: block
+}
+.dia-download .btnlist .pc {
+	BACKGROUND-POSITION: 0px -112px
+}
+.dia-download .btnlist .ios {
+	BACKGROUND-POSITION: 0px -56px
+}
+.dia-download .btnlist .android {
+	BACKGROUND-POSITION: 0px 0px
+}
+.dia-download .btnlist .android1 {
+	BACKGROUND-POSITION: 0px -169px
+}
+.download-popup .dia-close {
+	HEIGHT: 36px; WIDTH: 36px; RIGHT: 10px; BACKGROUND-POSITION: -264px -17px; TOP: 10px
+}
+.dia-weiquan {
+	HEIGHT: 297px; WIDTH: 306px; BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/page/weiquan.png)
+}
+.dia-hero-pop {
+	HEIGHT: 297px; WIDTH: 306px; BACKGROUND: url(http://game.gtimg.cn/images/yxzj/web201605/page/hero_pop.png)
+}

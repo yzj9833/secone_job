@@ -1,0 +1,83 @@
+
+    <div class="top-nav-bg"></div>
+    <div class=header>
+        <!--=========主导航==========-->
+        <div class="header-inner pr bc">
+            <!--标题列表-->
+            <ul class="main-nav clearfix"></ul>
+            <!--隐藏列表-->
+            <div id=J_subNav class="sub-nav">
+                <ul class=sub-nav-inner></ul>
+            </div>
+        </div>
+        <!--=========周免英雄和用户登录==========-->
+        <div class="info-box clearfix">
+            <h1>
+                <a title="王者荣耀"
+                   class="logo ht db pa" href="http://pvp.qq.com/">王者荣耀</a>
+            </h1>
+            <a  title="查看详情" class="view-btn ht db pa"
+                href="http://pvp.qq.com/cp/a20170516version/index.htm?ADTAG=pvp.index.topkv">查看详情</a>
+            <div class="hero-box fl pr">
+                <p id=FreeHeros-Title></p>
+                <ul id=FreeHeros-Cont class="hero-list clearfix">
+                    加载中...
+                </ul>
+                <a title="更多英雄" class="more-hero pa" href="http://pvp.qq.com/web201605/herolist.shtml"
+                   target=_blank>更<br>多<br>英<br>雄
+                </a>
+            </div>
+            <div class="login-box clearfix fl pr">
+                <a class="avatar pa spr"
+                   href="http://pvp.qq.com/web201605/personal.shtml">
+                    <img src="img/avatar1.jpg" width=75 height=75>
+                    <span class="pa spr level-ico db">0</span> </a>
+                <!--=====登录后已选择大区=====-->
+                <div id=logined_selected class="per-infor fl" style="display: none">
+                    <p class="user-name f12"><em>用户名称</em>
+                        <i id=nickname>--</i>
+                        <a class=logout_btn href="javascript:void(0)">注销</a>
+                        <a class=select_role style="color: #2d84d3" href="javascript:void(0)">
+                            切换大区&gt;
+                        </a>
+                    </p>
+                    <ul class="userinfo-list tc">
+                        <LI><EM class=grade_level>倔强青铜III</EM><I>段位</I> </LI>
+                        <LI><EM class=win_count>-</EM><I>胜场</I> </LI>
+                        <LI><EM class=hero_count>-</EM><I>英雄数</I> </LI>
+                        <LI><EM class=skin_count>-</EM><I>皮肤数</I> </LI></ul></div>
+                <!--=====登录前=====-->
+                <div id=unlogin class="per-infor txt2 fl">
+                    <p class=user-name>亲爱的召唤师，欢迎
+                        <a href="javascript:void(0)">登录</a>
+                    </p>
+                    <!--p>登录后查看自己的英雄联盟游戏信息，包括召唤师等级、游戏胜场数、账户信息、声望值 等。</p-->
+                </div>
+                <!--=====登录后未选择大区=====-->
+                <div id=logined_not_selected class="per-infor txt2 fl" style="display: none">
+                    <P class=user-name>您已登录，请
+                        <a class=select_role href="javascript:void(0)">选择大区</a>
+                        ，或者
+                        <a class=logout_btn href="javascript:void(0)">注销</a>
+                    </P>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop pr" id="login_select" role="dialog" tabindex="-1">
+        <a href="javascript:void(0)" class="close pa db ht">关闭</a>
+        <a href="javascript:void(0)" id="wxlogin" class="wx-login pa db ht">微信用户登录</a>
+        <a href="javascript:void(0)" id="qqlogin" class="qq-login pa db ht">QQ用户登录</a>
+    </div>
+    <div class="pop2 pr"  id="area_select" role="dialog" tabindex="-1">
+        <a href="javascript:void(0)" class="close pa db ht">关闭</a>
+        <div class="se-input">
+            <select name="channelContentId" id="channelContentId"><option selected="">选择渠道</option><option value="3">微信-安卓(android)</option><option value="4">微信-苹果(iOS)</option><option value="7">微信-安卓抢先服</option></select>
+            <select name="areaContentId" id="areaContentId"><option value="">请选择大区</option></select>
+            <select name="roleContentId" id="roleContentId"><option value="">选择角色</option></select>
+        </div>
+        <div class="se-btn clearfix">
+            <a id="RoleSelectBtn" href="jjavascript:void(0)" class="fl ht">确定</a>
+            <a href="javascript:void(0)" class="fl ht">取消</a>
+        </div>
+    </div>
